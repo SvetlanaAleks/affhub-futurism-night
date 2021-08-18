@@ -1,0 +1,50 @@
+header.header
+	.container
+		img.header__logo(src="img/svg/logo.svg", alt="affhub")
+		.header__wrapper
+			.header__left
+				img.header__title(src="img/svg/header_title.svg", alt="Affhub Futurism Night")
+				.header__wrap-photo
+					img.header__photo(src="img/header_photo.png", alt="")
+			.header__right
+				.header__timer.timer
+					p.timer__text До мероприятия осталось:
+					.timer__block
+						.timer__col
+							.timer__top
+								span.timer__el.days 00
+							span.timer__desc дня
+						.timer__col
+							.timer__top
+								span.timer__el.hours 00
+							span.timer__desc час
+						.timer__col
+							.timer__top
+								span.timer__el.minutes 00
+							span.timer__desc мин
+				.header__place.place
+					img.place__ico(src="img/svg/place_icon.svg", alt="ico")
+					p.place__text Art-zavod Platforma
+				.header__info
+					p.header__month
+						span 3
+						| сентября
+					p.header__time
+						i.fico.fico-time
+						span 19:00
+					p.header__desc-party НЕтипичная PARTY для твоей полной перезагрузки
+				button.header__btn.btn.js-show-popup(data-target="#order-popup") Регистрация
+				.header__detail.detail
+					.detail__icon !
+					p.detail__text Количество мест ограничено
+						br
+						| Билеты платные
+				.header__social
+					a(href="https://www.facebook.com/affhubcom/" target="_blank")
+						i.fico.fico-fb
+					a(href="https://vk.com/affhub" target="_blank")
+						i.fico.fico-vk
+					a(href="https://t.me/joinchat/AAAAAEJWe7Cf1Cw_rO7JZw" target="_blank")
+						i.fico.fico-tg
+					a(href="https://www.instagram.com/affhubcommunity/" target="_blank")
+						i.fico.fico-inst
