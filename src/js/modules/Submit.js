@@ -1,10 +1,5 @@
 var Submit = (function () {
   var errorMessages = {
-    name: {
-      regExp: /([A-Za-zА-ЯЄІЇа-яєії])+$/,
-      empty: "Имя обязательно",
-      notValid: "Некорректное имя",
-    },
     phone: {
       regExp: /[0-9+()-\s]{5,}/,
       empty: "Номер телефона обязателен",
