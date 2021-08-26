@@ -84,6 +84,11 @@
 	&__wrapper
 		display: flex
 		align-items: flex-end
+		margin-bottom: 120px
+		+r(1249)
+			margin-bottom: 100px
+		+r(767)
+			margin-bottom: 60px
 		+r(479)
 			display: block
 	&__photo
@@ -128,3 +133,67 @@
 			line-height: 17px
 			width: 227px
 			margin: auto
+	&__bottom
+		display: flex
+		justify-content: flex-start
+		align-items: flex-start
+		+r(767)
+			flex-direction: column
+			align-items: center
+	&__title-prize
+		padding-top: 45px
+		max-width: 676px
+		width: 100%
+		flex-shrink: 0
+		font-weight: bold
+		font-size: 64px
+		line-height: 71px
+		letter-spacing: 0.05em
+		.color
+			padding: 10px
+			display: inline-block
+			background: rgba(237, 83, 75, 0.5)
+			margin: 19px 0
+		.bg-world span
+			letter-spacing: normal
+		+r(1249)
+			max-width: 605px
+			font-size: 56px
+			line-height: 61px
+			.color
+				margin: 14px 0
+		+r(1023)
+			max-width: 425px
+			font-size: 39px
+			line-height: 36px
+		+r(767)
+			text-align: center
+			margin: auto
+			margin-bottom: 20px
+			padding-top: 0
+			line-height: 100%
+			.color
+				margin: 10px 0
+		+r(639)
+			max-width: 385px
+			font-size: 35px
+		+r(479)
+			font-size: 24px
+			line-height: 26px
+			margin-bottom: 30px
+			.color
+				margin: 0
+				padding: 5px 10px
+	&__prize
+		margin-left: -81px
+		+r(1249)
+			max-width: 490px
+			width: 100%
+		+r(1023)
+			max-width: 350px
+			width: 100%
+			margin-left: -50px
+		+r(767)
+			margin: auto
+		+r(639)
+			max-width: 320px
