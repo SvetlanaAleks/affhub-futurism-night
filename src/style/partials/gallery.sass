@@ -50,7 +50,7 @@
 			height: 370px
 			overflow: hidden
 			position: relative
-			margin-bottom: 15px
+			margin-bottom: 35px
 			&::before
 				content: ''
 				display: block
@@ -344,14 +344,32 @@
 		bottom: 30px
 		right: 30px
 		max-width: 370px
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)), #9F72FF
+		.btn__label
+			max-width: 304px
+			&--1
+				transform: rotate(-6.09deg)
+				top: -3px
+				left: -15px
+			&--2
+				bottom: 4px
+				transform: rotate(-6.09deg)
+				right: -16px
 		+r(1023)
 			max-width: 290px
 			font-size: 16px
+			.btn__label
+				&--1
+					top: -9px
+				&--2
+					bottom: -1px
 		+r(767)
 			max-width: 260px
 		+r(639)
-			position: static
+			position: relative
+			bottom: auto
+			right: auto
 			margin: auto
-			margin-top: 10px
+			margin-top: 30px
 		+r(479)
 			max-width: 100%

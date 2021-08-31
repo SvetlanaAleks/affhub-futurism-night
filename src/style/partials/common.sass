@@ -75,8 +75,43 @@ body, html
 	padding: 15px
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif
 	transition: all .3s
+	position: relative
 	&:hover
 		background: darken(#9F72FF, 10%)
 	+r(767)
 		font-size: 16px
 		padding: 10px
+	&__label
+		padding: 3px 27px
+		max-width: 270px
+		width: 100%
+		position: absolute
+		background: #ED534B
+		color: white
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 10px
+		line-height: 150%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&--dark
+			background: #C83830
+		&--1
+			transform: rotate(-0.09deg)
+			top: -5px
+			left: -45px
+		&--2
+			bottom: -6px
+			transform: rotate( -1.09deg)
+			right: -40px
+		&--3
+			left: -40px
+			top: 9px
+			transform: rotate(3.91deg)
+			z-index: -1
+		&--4
+			right: -40px
+			bottom: 6px
+			transform: rotate(3.91deg)
+			z-index: -1
